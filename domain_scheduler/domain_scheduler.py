@@ -66,6 +66,7 @@ class DomainScheduler(object):
             self._mqpush(request)
             self.stats.inc_value('scheduler/enqueued/memory', spider=self.spider)
         self.stats.inc_value('scheduler/enqueued', spider=self.spider)
+        self.stats.inc_value('scheduler/enqueued/key/{}'.format(self.request_key(request)))
         return True
 
     def next_request(self):
@@ -78,6 +79,7 @@ class DomainScheduler(object):
                 self.stats.inc_value('scheduler/dequeued/disk', spider=self.spider)
         if request:
             self.stats.inc_value('scheduler/dequeued', spider=self.spider)
+            self.stats.inc_value('scheduler/dequeued/key/{}'.format(self.request_key(request)))
         return request
 
     def __len__(self):
