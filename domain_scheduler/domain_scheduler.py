@@ -1,7 +1,7 @@
 import os
 import json
 import logging
-from urlparse import urlparse
+from urllib.parse import urlparse
 from os.path import join, exists
 
 from scrapy.utils.reqser import request_to_dict, request_from_dict
