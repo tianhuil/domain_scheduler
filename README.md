@@ -4,7 +4,7 @@ A domain-aware scheduler for Scrapy that round robin cycles through the domains 
 ## Installation
 You'll need to install Scrapy (built and tested with version 1.5).  Then install this package:
 ```
-pip install git+https://github.com/github.com/tianhuil/domain_scheduler.git@master
+pip install git+https://github.com/tianhuil/domain_scheduler.git@master
 ```
 
 Then in `settings.py`, set
