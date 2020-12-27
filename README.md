@@ -1,6 +1,8 @@
 # domain_scheduler
 A domain-aware scheduler for Scrapy that round robin cycles through the domains as it outputs requests to reduce the load on servers and accelerate scraping
 
+Only works for Python 3
+
 ## Installation
 You'll need to install Scrapy (built and tested with version 1.5).  Then install this package:
 ```
