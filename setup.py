@@ -7,4 +7,5 @@ setup(name='domain_scheduler',
       author='Tianhui Michael Li',
       license='MIT',
       packages=['domain_scheduler'],
+      setup_requires=['wheel'],
       zip_safe=False)
